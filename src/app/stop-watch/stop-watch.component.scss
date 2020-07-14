@@ -1,0 +1,58 @@
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .stopwatch-count {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stopwatch-actions {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .stopwatch-action {
+    flex: 1;
+    font-size: 3vw;
+    appearance: none;
+    background: none;
+    border: none;
+    color: inherit;
+  }
+  
+  @media (orientation: landscape) {
+    .stopwatch {
+      font-size: 15vw;
+    }
+    .stopwatch-count {
+      font-size: 10vw;
+      height: 75%;
+    }
+    .stopwatch-action {
+      font-size: 5vw;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .stopwatch {
+      font-size: 30vw;
+      height: 50vh;
+      height: calc(var(--vh, 1vh) * 50);
+    }
+    .stopwatch-count {
+      font-size: 20vw;
+    }
+    .stopwatch-action {
+      font-size: 10vw;
+    }
+  }
+  

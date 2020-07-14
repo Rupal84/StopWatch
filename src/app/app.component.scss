@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 0.5vh) * 100);
+  }
+  
+  .time,
+  .stopwatch {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .time {
+    background-color: #acc9af;
+  }
+  
+  .stopwatch {
+    background-color: #f7f8a1;
+  }
+  
+  @media (orientation: landscape) {
+    .SplitClock {
+      flex-direction: row;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .SplitClock {
+      flex-direction: column;
+    }
+  }
+  

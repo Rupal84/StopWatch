@@ -1,0 +1,23 @@
+.time {
+    width: 100%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (orientation: landscape) {
+    .time {
+      font-size: 15vw;
+      height: 75%;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .time {
+      font-size: 30vw;
+      height: 50vh;
+      height: calc(var(--vh, 1vh) * 50);
+    }
+  }
+  

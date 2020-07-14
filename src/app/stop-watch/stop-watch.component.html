@@ -1,0 +1,8 @@
+<div class="stopwatch">{{stopWatch | StopWatchPipe}}
+    <div class="stopwatch-actions">
+        <button class="stopwatch-action"
+            (click)="onClickStartStop()">{{startStop}}</button>
+        <button class="stopwatch-action"
+            (click)="onReset()">Reset</button>
+    </div>
+</div>
